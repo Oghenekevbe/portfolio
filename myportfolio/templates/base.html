@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    
+
+
+  <title>{% block title %}{% endblock title %}</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</head>
+
+<body>
+  <section class="banner">
+
+
+    <div class="image-wrap">
+      <img src="{{MEDIA_URL}}images/profile_photo2.jpg" alt="" id="profile-image">
+    </div>
+
+    <div class="word-wrapper " style="margin:10px 5px 5px 5px ; display: flex; flex-direction: column; align-items: flex-start;">
+      <div id="contact-card" data-aos="flip-up"style="display: none;  margin-top: 10px;">
+        <div class="card" style="width: 20rem;">
+          <div class="card-body">
+            <h5 class="card-title text-secondary">Let's Connect</h5>
+            <hr>
+            <p class="card-text">
+                <h6 class=" text-secondary">Tel: +2348182502134</h6>
+                <h6 class=" text-secondary">Email: oghenekevbe.egume@gmail.com</h6>
+                <h6 class=" text-secondary">GitHub: <a href="https://github.com/Oghenekevbe">https://github.com/Oghenekevbe</a></h6>
+                <h6 class=" text-secondary">Medium: <a href="https://medium.com/@oghenekevbe">https://medium.com/@oghenekevbe</a></h6>
+
+            </p>
+            <button id="about-me" class="btn btn-sm" type="submit">Done</button>
+
+          </div>
+        </div>
+      </div>
+      <div style="flex: 1;">
+        <div class="container mt-2" id="intro">
+          <div class="row">
+            <div class="col">
+              <h6 class="text-secondary mt-3">
+                <span style="color: #E6E6FA;">Welcome to my world! <br><hr></span>  I'm Oghenekevbe Egume, a budding web developer skilled in HTML5, CSS3, and Python. I've built e-commerce and blog sites, and I'm always on the lookout for internships and collaborations to further hone my skills. I'm eager to showcase my work and share my passion for web development with you. Join me on this exciting journey as I continue to learn and grow as a junior developer. Let's create something amazing together!
+              </h6>
+              <hr>
+              <button id="contact-me" class="btn btn-sm" type="submit">Contact Me</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div style="flex: 1;">
+        <h6 class="ml6" style="margin-left: 10px;">
+          <span class="text-wrapper">
+            <span class="letters">HTML CSS Javascript Python Django</span>
+          </span>
+        </h6>
+        <div style="display: flex; justify-content: center; align-items: flex-start;">
+          <img src="{{MEDIA_URL}}images/html.png" alt="" width="60px" style="margin-right: 30px; margin-left: -5px;">
+          <img src="{{MEDIA_URL}}images/css.png" alt="" width="60px" style="margin-right: 25px; margin-left: -15px;">
+          <img src="{{MEDIA_URL}}images/js.png" alt="" width="60px" style="margin-right: 30px;">
+          <img src="{{MEDIA_URL}}images/python.png" alt="" width="60px" style="margin-right: 30px;">
+          <img src="{{MEDIA_URL}}images/django.png" alt="" width="60px">
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+  </section>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="base-text">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="base-text">Resume</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container" id="content-wrapper" style=" min-height: 82vh; max-height: fit-content;">
+    {% block content %}
+    {% endblock content %}
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <script src="{% static 'js/base.js' %}"></script>
+
+</body>
+
+</html>
