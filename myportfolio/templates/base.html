@@ -7,13 +7,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    
-
-
   <title>{% block title %}{% endblock title %}</title>
 
+  <script src="https://kit.fontawesome.com/1ec431700c.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
 
@@ -38,7 +37,7 @@
                 <h6 class=" text-secondary">Email: oghenekevbe.egume@gmail.com</h6>
                 <h6 class=" text-secondary">GitHub: <a href="https://github.com/Oghenekevbe">https://github.com/Oghenekevbe</a></h6>
                 <h6 class=" text-secondary">Medium: <a href="https://medium.com/@oghenekevbe">https://medium.com/@oghenekevbe</a></h6>
-
+                <h6 class=" text-secondary">Linked-in: <a href="https://www.linkedin.com/in/oghenekevbe-egume/">https://www.linkedin.com/in/oghenekevbe-egume/</a></h6>
             </p>
             <button id="about-me" class="btn btn-sm" type="submit">Done</button>
 
@@ -66,7 +65,7 @@
             <span class="letters">HTML CSS Javascript Python Django</span>
           </span>
         </h6>
-        <div style="display: flex; justify-content: center; align-items: flex-start;">
+        <div class="code-icons" style="display: flex; justify-content: center; align-items: flex-start;">
           <img src="{{MEDIA_URL}}images/html.png" alt="" width="60px" style="margin-right: 30px; margin-left: -5px;">
           <img src="{{MEDIA_URL}}images/css.png" alt="" width="60px" style="margin-right: 25px; margin-left: -15px;">
           <img src="{{MEDIA_URL}}images/js.png" alt="" width="60px" style="margin-right: 30px;">
@@ -110,7 +109,7 @@
 </div>
 
 
-<footer style="width: 100%; background-color: #01041d!important; border-top-style: ridge; border-color: silver;">
+<footer style="width: 100%; margin-top: 10px; background-color: #01041d!important; border-top-style: ridge; border-color: silver;">
   <div class="container-fluid text-center">
     <p class=" text-secondary mt-1">&copy; 2023 Oghenekevbe Egume. All rights reserved.</p>
   </div>
