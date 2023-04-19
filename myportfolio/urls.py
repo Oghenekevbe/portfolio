@@ -4,5 +4,6 @@ from .views import Index
 
 
 urlpatterns = [
-    path("", Index.as_view(), name="index")
+    path("", Index.as_view(), name="index"),
+    path("resume/", views.resume, name="resume")
 ]

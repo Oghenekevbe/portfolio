@@ -1,6 +1,15 @@
-body{
+
+body {
     background-color: #01041d!important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: fit-content;
+    display: flex !important;
+    flex-direction: column !important;
 }
+
+
 
 .btn{
     background-color: #C0C0C0;
@@ -36,12 +45,16 @@ body{
     border-radius: 50% !important; 
     border-style: ridge; 
     border-color: #C0C0C0 ; 
+    border-color: #b8b5b5 ; 
     width: 200px;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;    
 }
 
+    
+
 .card{
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.0002);
+    padding: 15px;
 }
 
 /* animations  */

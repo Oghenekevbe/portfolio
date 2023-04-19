@@ -91,10 +91,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" id="base-text">About Me</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'index' %}" id="base-text">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" id="base-text">Resume</a>
+            <a class="nav-link active" aria-current="page" href="{% url 'resume' %}" id="base-text">Resume</a>
           </li>
 
 
@@ -104,16 +104,31 @@
   </nav>
 
 
-  <div class="container" id="content-wrapper" style=" min-height: 82vh; max-height: fit-content;">
-    {% block content %}
-    {% endblock content %}
+<div class="content-wrapper">
+  {% block content %}
+  {% endblock content %}
+</div>
+
+
+<footer style="width: 100%; background-color: #01041d!important; border-top-style: ridge; border-color: silver;">
+  <div class="container-fluid text-center">
+    <p class=" text-secondary mt-1">&copy; 2023 Oghenekevbe Egume. All rights reserved.</p>
   </div>
+</footer>
+
+
+
+
+
+
+
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
   <script src="{% static 'js/base.js' %}"></script>
+
 
 </body>
 

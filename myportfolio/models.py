@@ -11,6 +11,7 @@ class Websites(models.Model):
     address = models.URLField(max_length=200)
 
     def __str__(self):
-        return self.name + self.address
+        return self.name + ' | ' + self.address
 
-
+    class Meta: 
+        ordering = ['-id'] 

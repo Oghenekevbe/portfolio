@@ -9,3 +9,6 @@ class Index(ListView):
     template_name = "index.html"
     context_object_name = 'websites'
   
+  
+def resume(request):
+    return render(request, 'resume.html')

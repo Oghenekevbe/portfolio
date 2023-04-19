@@ -1,3 +1,33 @@
 {% extends 'base.html' %}
 {% load static %}
-<h1>hello world</h1>
+{% block title %}Welcome{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row" style=" margin-top: 10px;">
+        <div class="col">
+      
+          {% if websites %}
+          {% for website in websites %}
+          <div class="card mt-3">
+      
+            <p><img src="{{website.desktop.url}}" alt="" width="300" style="margin-right: 5px;border-style: ridge; 
+              border-color: #C0C0C0 ; 
+              box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;"> <img src="{{website.mobile.url}}" alt="" width="100" style="border-style: ridge; 
+              border-color: #C0C0C0 ; 
+              box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;"></p>
+            <div class="card-text">
+              <a href="{{website.address}}" class=" fs-3" style="color: #E6E6FA; text-decoration: none;">{{website.name}}</a>
+              <hr style="border-color: white;">
+            <h6 class=" text-secondary">{{website.description|safe}}</h6>
+      
+            </div>
+          </div>
+          {% endfor %}
+          {% endif %}
+      
+        </div>
+      </div>
+      
+</div>
+{% endblock content %}
